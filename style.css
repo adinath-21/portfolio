@@ -102,3 +102,129 @@ nav {
   padding: 4px 11px;
   border-radius: 20px;
 }
+
+/* ── HERO ── */
+.hero {
+  padding: 80px 40px 64px;
+  border-bottom: 0.5px solid var(--rule);
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 48px;
+  align-items: end;
+}
+
+.hero-display {
+  font-family: var(--serif);
+  font-size: 96px;
+  font-weight: 400;
+  color: var(--dark);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  margin-bottom: 28px;
+}
+
+.hero-display .stroke {
+  -webkit-text-stroke: 1.5px var(--dark);
+  color: transparent;
+}
+
+.hero-tagline {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.65;
+  max-width: 480px;
+}
+
+.hero-tagline strong {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.cta-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 11px 22px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.btn-primary:hover { opacity: 0.88; }
+
+.hero-meta-row {
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid var(--rule);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hmr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 0.5px solid var(--rule);
+  background: var(--surface);
+}
+
+.hmr:last-child { border-bottom: none; }
+
+.hmr-label {
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hmr-val {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.hmr-val.accent { color: var(--accent); }
+
+/* ── CHAPTER HEADER ── */
+.chapter {
+  padding: 36px 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ch-idx {
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.ch-rule {
+  flex: 1;
+  height: 0.5px;
+  background: var(--rule);
+}
+
+.ch-name {
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
